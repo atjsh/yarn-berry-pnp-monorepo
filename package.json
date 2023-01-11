@@ -1,0 +1,4 @@
+{
+  "name": "yarn-berry-pnp-monorepo-test",
+  "packageManager": "yarn@3.3.1"
+}
