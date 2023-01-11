@@ -1,0 +1,11 @@
+{
+  "name": "@packages/shared",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/lodash": "^4.14.191"
+  }
+}
