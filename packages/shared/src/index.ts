@@ -1,5 +1,5 @@
-import * as _ from "lodash";
+import { sum } from "lodash-es";
 
-export function getSum(numbers: number[]): number {
-  return _.sum(numbers);
+export function getSum(numbers: number[]) {
+  return sum(numbers);
 }
