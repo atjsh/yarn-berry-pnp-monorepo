@@ -2,12 +2,12 @@
   "name": "@packages/shared",
   "private": true,
   "main": "dist/src/index.js",
-  "types": "src/index.ts",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc -b -v"
   },
   "dependencies": {
-    "cowsay": "^1.5.0"
+    "axios": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

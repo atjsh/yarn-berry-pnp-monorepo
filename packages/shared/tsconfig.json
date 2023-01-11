@@ -3,7 +3,8 @@
     "rootDir": ".",
     "outDir": "dist",
     "composite": true,
-    "module": "commonjs"
+    "module": "ESNext",
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }

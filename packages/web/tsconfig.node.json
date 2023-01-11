@@ -6,5 +6,10 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
+  "references": [
+    {
+      "path": "../shared"
+    }
+  ],
   "include": ["vite.config.ts"]
 }
