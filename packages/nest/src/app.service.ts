@@ -4,6 +4,6 @@ import { getSum } from '@packages/shared'
 @Injectable()
 export class AppService {
   getHello(): string {
-    return `Hello World! ${getSum}`;
+    return `Hello World! ${getSum([1, 2, 3])}`;
   }
 }
