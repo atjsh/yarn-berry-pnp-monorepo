@@ -1965,7 +1965,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"],\
-            ["vite", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:4.0.4"]\
+            ["vite", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:4.0.4"],\
+            ["vite-plugin-restart", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:0.3.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -9147,6 +9148,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "stylus",\
             "sugarss",\
             "terser"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vite-plugin-restart", [\
+        ["npm:0.3.0", {\
+          "packageLocation": "./.yarn/cache/vite-plugin-restart-npm-0.3.0-4a271a96a9-3f94777085.zip/node_modules/vite-plugin-restart/",\
+          "packageDependencies": [\
+            ["vite-plugin-restart", "npm:0.3.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:0.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/vite-plugin-restart-virtual-f1d1cc4bfa/0/cache/vite-plugin-restart-npm-0.3.0-4a271a96a9-3f94777085.zip/node_modules/vite-plugin-restart/",\
+          "packageDependencies": [\
+            ["vite-plugin-restart", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:0.3.0"],\
+            ["@types/vite", null],\
+            ["micromatch", "npm:4.0.5"],\
+            ["vite", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:4.0.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/vite",\
+            "vite"\
           ],\
           "linkType": "HARD"\
         }]\

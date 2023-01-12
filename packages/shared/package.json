@@ -2,7 +2,8 @@
   "name": "@packages/shared",
   "private": true,
   "scripts": {
-    "build": "tsc -b -v"
+    "build": "tsc -b -v",
+    "watch": "tsc -b -v -w"
   },
   "types": "dist/src/index.d.ts",
   "main": "dist/src/index.js",

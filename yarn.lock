@@ -1297,6 +1297,7 @@ __metadata:
     react-dom: ^18.2.0
     typescript: ^4.9.3
     vite: ^4.0.0
+    vite-plugin-restart: ^0.3.0
   languageName: unknown
   linkType: soft
 
@@ -5324,7 +5325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.0, micromatch@npm:^4.0.4":
+"micromatch@npm:^4.0.0, micromatch@npm:^4.0.4, micromatch@npm:^4.0.5":
   version: 4.0.5
   resolution: "micromatch@npm:4.0.5"
   dependencies:
@@ -7372,6 +7373,17 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
+  languageName: node
+  linkType: hard
+
+"vite-plugin-restart@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "vite-plugin-restart@npm:0.3.0"
+  dependencies:
+    micromatch: ^4.0.5
+  peerDependencies:
+    vite: ^2.9.0 || ^3.0.0 || ^4.0.0
+  checksum: 3f947770853f316242245cfa1f541b2ff601bf2dd77a37b5eab7876a3c45457efe0188751ffe2cd6280d9cd9b9355e18ffd8d453f706604bf871ae6eb52a91cc
   languageName: node
   linkType: hard
 
