@@ -1,3 +1,5 @@
+import { sum } from 'lodash';
+
 export function getSum(numbers: number[]) {
-  return numbers.reduce((a, b) => a + b, 0);
+  return sum(numbers) + 2;
 }

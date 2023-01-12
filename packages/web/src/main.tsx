@@ -1,6 +1,10 @@
-import { createRoot } from 'react-dom/client';
-import { getSum } from '@packages/shared';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-createRoot(document.getElementById('root') as HTMLElement).render(
-  <div>{getSum([1, 2, 3, 4, 5]).toString()}</div>,
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );

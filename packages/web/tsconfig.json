@@ -7,22 +7,15 @@
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strictNullChecks": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "composite": true,
-    "rootDir": "."
+    "jsx": "react-jsx"
   },
   "include": ["src"],
-  "references": [
-    { "path": "./tsconfig.node.json" },
-    {
-      "path": "../shared"
-    }
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
