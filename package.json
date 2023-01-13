@@ -5,6 +5,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "watch:web": "yarn workspaces foreach --verbose --interlaced --parallel --recursive --from '@packages/web' run watch",
+    "watch:nest": "yarn workspaces foreach --verbose --interlaced --parallel --recursive --from '@packages/nest' run watch"
+  },
   "devDependencies": {
     "typescript": "^4.9.4"
   }

@@ -20,8 +20,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/nest"\
       },\
       {\
-        "name": "@packages/shared",\
-        "reference": "workspace:packages/shared"\
+        "name": "@packages/shared-data",\
+        "reference": "workspace:packages/shared-data"\
       },\
       {\
         "name": "@packages/web",\
@@ -32,7 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@packages/nest", ["workspace:packages/nest"]],\
-      ["@packages/shared", ["workspace:packages/shared"]],\
+      ["@packages/shared-data", ["workspace:packages/shared-data"]],\
       ["@packages/web", ["workspace:packages/web"]],\
       ["yarn-berry-pnp-monorepo-test", ["workspace:."]]\
     ],\
@@ -1913,7 +1913,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:2967e80aaeb7306c48d475f232b1700c4a8aa141277160edd60e209655b0850c2fdec196ce834aed24b391778d862fd8cb53a8ef3a572b15f8c15752acb0d95c#npm:8.4.7"],\
             ["@nestjs/schematics", "virtual:2967e80aaeb7306c48d475f232b1700c4a8aa141277160edd60e209655b0850c2fdec196ce834aed24b391778d862fd8cb53a8ef3a572b15f8c15752acb0d95c#npm:8.0.11"],\
             ["@nestjs/testing", "virtual:2967e80aaeb7306c48d475f232b1700c4a8aa141277160edd60e209655b0850c2fdec196ce834aed24b391778d862fd8cb53a8ef3a572b15f8c15752acb0d95c#npm:8.4.7"],\
-            ["@packages/shared", "workspace:packages/shared"],\
+            ["@packages/shared-data", "workspace:packages/shared-data"],\
             ["@types/express", "npm:4.17.15"],\
             ["@types/jest", "npm:27.5.0"],\
             ["@types/node", "npm:16.18.11"],\
@@ -1940,14 +1940,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["@packages/shared", [\
-        ["workspace:packages/shared", {\
-          "packageLocation": "./packages/shared/",\
+      ["@packages/shared-data", [\
+        ["workspace:packages/shared-data", {\
+          "packageLocation": "./packages/shared-data/",\
           "packageDependencies": [\
-            ["@packages/shared", "workspace:packages/shared"],\
-            ["@types/lodash", "npm:4.14.191"],\
-            ["@types/node", "npm:18.11.18"],\
-            ["lodash", "npm:4.17.21"],\
+            ["@packages/shared-data", "workspace:packages/shared-data"],\
+            ["date-fns", "npm:2.29.3"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
           ],\
           "linkType": "SOFT"\
@@ -1958,7 +1956,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/web/",\
           "packageDependencies": [\
             ["@packages/web", "workspace:packages/web"],\
-            ["@packages/shared", "workspace:packages/shared"],\
+            ["@packages/shared-data", "workspace:packages/shared-data"],\
             ["@types/react", "npm:18.0.26"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["@vitejs/plugin-react", "virtual:cd00373857b3c506515de0f4389b0ac2309298ef86adb0d103dd57f98f5667e77087c76d033b432c5f020099d1c7d9ef8342210c8b0ad8a8dc589cbc2af99925#npm:3.0.1"],\
@@ -2247,15 +2245,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-json5-npm-0.0.29-f63a7916bd-e60b153664.zip/node_modules/@types/json5/",\
           "packageDependencies": [\
             ["@types/json5", "npm:0.0.29"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/lodash", [\
-        ["npm:4.14.191", {\
-          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.191-67a04a969b-ba0d5434e1.zip/node_modules/@types/lodash/",\
-          "packageDependencies": [\
-            ["@types/lodash", "npm:4.14.191"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3995,6 +3984,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/csstype-npm-3.1.1-3857baf48b-1f7b4f5fdd.zip/node_modules/csstype/",\
           "packageDependencies": [\
             ["csstype", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["date-fns", [\
+        ["npm:2.29.3", {\
+          "packageLocation": "./.yarn/cache/date-fns-npm-2.29.3-fef7e3c72c-e01cf5b62a.zip/node_modules/date-fns/",\
+          "packageDependencies": [\
+            ["date-fns", "npm:2.29.3"]\
           ],\
           "linkType": "HARD"\
         }]\

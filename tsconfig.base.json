@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@packages/shared": ["./packages/shared/src"]
-    }
-  }
-}

@@ -1,0 +1,30 @@
+{
+  "name": "@packages/shared-data",
+  "private": true,
+  "scripts": {
+    "build:cjs": "tsc -b -v tsconfig.cjs.json",
+    "build:esm": "tsc -b -v tsconfig.esm.json",
+    "build": "yarn run build:cjs & yarn run build:esm",
+    "watch": "yarn run build:cjs --watch & yarn run build:esm --watch"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/src/index.d.ts",
+        "default": "./dist/esm/src/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/src/index.d.ts",
+        "default": "./dist/cjs/src/index.js"
+      }
+    }
+  },
+  "types": "dist/cjs/src/index.d.ts",
+  "main": "dist/cjs/src/index.js",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  }
+}

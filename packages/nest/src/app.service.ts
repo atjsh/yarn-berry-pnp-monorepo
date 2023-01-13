@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { getSum } from '@packages/shared'
+import { SHARED_ID, getCurrentTime } from '@packages/shared-data';
 
 @Injectable()
 export class AppService {
   getHello(): string {
-    return `Hello World! ${getSum([1, 2, 3])}`;
+    return `Hello ${SHARED_ID}! this is ${getCurrentTime()}.`;
   }
 }
