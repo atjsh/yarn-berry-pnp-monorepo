@@ -3,7 +3,9 @@
     "rootDir": ".",
     "outDir": "dist",
     "composite": true,
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "sourceMap": true,
+    "declarationMap": true
   },
   "include": ["src"]
 }
