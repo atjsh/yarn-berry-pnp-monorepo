@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "rootDir": ".",
-    "composite": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "declarationMap": true,
