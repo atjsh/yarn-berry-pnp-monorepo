@@ -19,7 +19,6 @@
       }
     }
   },
-  "type": "commonjs",
   "types": "dist/cjs/src/index.d.ts",
   "main": "dist/cjs/src/index.js",
   "devDependencies": {
