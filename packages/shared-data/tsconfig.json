@@ -4,6 +4,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "declarationMap": true,
+    "declaration": true,
     "target": "ES2020",
     "moduleResolution": "node"
   },
