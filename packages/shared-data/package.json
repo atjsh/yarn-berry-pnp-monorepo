@@ -19,8 +19,8 @@
       }
     }
   },
-  "types": "dist/cjs/src/index.d.ts",
-  "main": "dist/cjs/src/index.js",
+  "types": "src/index.ts",
+  "main": "src/index.ts",
   "devDependencies": {
     "typescript": "^4.9.4"
   },
