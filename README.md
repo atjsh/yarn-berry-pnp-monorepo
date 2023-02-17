@@ -76,9 +76,11 @@ Let's have a look at the `package.json` of `@packages/shared-data`.
 
 - `exports` property is used by Node.js to find the entry point of this package. It's used by `nest` and `web` apps to import this package.
 
-  `nest` app compiles to a CommonJS app, it uses `require` to import this package. And `web` app needs to import package as an ES Module, Because it's a Vite app and ES Module is required for better bundling results.
+  `nest` app compiles to a CommonJS app, it uses `require` to import this package. And `web` app needs to import package as an ES Module, Because it's a Vite app and [ES Module is required for better bundling results](https://web.dev/commonjs-larger-bundles/).
 
-  So, we need to compile this package to 2 different formats: CommonJS and ES Modules. And we need to tell Node.js to use `dist/cjs` directory when it's imported by `require` and use `dist/esm` directory when it's imported by `import`.
+  So, we need to compile this package to 2 different formats: CommonJS and ES Modules. And we need to tell Node.js to use `dist/cjs` directory when it's imported by `require` and use `dist/esm` directory when it's imported by `import`. We can do this by using `exports` property with `require` and `import` conditions. and it's called Conditional Exports.
+
+  More detailed explanation of `exports` property: https://nodejs.org/api/packages.html#exports (covers basic information of `exports` field) and https://nodejs.org/api/packages.html#conditional-exports (covers conditional exports feature)
 
 - `scripts` property contains 4 scripts:
 
